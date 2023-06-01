@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+
+    <!-- JS -->
+    <script src="js/script.js" defer></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Clima Tempo</title>
+</head>
+<body>
+    <div id="container">
+
+        <div class="form">
+            <h3>Confira o clima de uma cidade:</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="input-cidade">
+                <button id="pesquisar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="carregando" class="escondido"></div>
+
+        <div id="clima-data" class="escondido">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="cidade"></span>
+                <img src="" alt="bandeira do pais" id="pais">
+            </h2>
+        
+            <p id="temperatura">
+                <span>38</span>
+                &deg;C
+            </p>
+            <div id="container-descricao">
+                <p id="descricao"></p>
+                <img src="" alt="Condicoes do tempo" id="clima-icone" width="40px">
+            </div>
+            <div id="container-detalhes">
+                <p id="umidade">
+                    <i class="fa-solid fa-dropleft"></i>
+                    <span></span>
+                </p>
+                <p id="vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
